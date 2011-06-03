@@ -19,10 +19,11 @@ class StockPrice
     #}
     body = '[ { "id": "358464" ,"t" : "MSFT" ,"e" : "NASDAQ" ,"l" : "24.76" ,"l_cur" : "24.76" ,"s": "0" ,"ltt":"11:29AM EDT" ,"lt" : "May 27, 11:29AM EDT" ,"c" : "+0.09" ,"cp" : "0.35" ,"ccol" : "chg" } ]'
     #body = res.body.gsub(/^\/\//, "")
-    ActiveSupport::JSON.decode(body)
+    ActiveSupport::JSON.decode(body).first["l"].to_f
 
-    
   end
+
+
 
 
 
