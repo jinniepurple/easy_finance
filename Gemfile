@@ -13,6 +13,7 @@ group :test, :development do
   gem "rspec-rails", "~> 2.4"
 end
 
+gem 'haml'
 
 # Use unicorn as the web server
 # gem 'unicorn'
