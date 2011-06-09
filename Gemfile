@@ -14,6 +14,7 @@ group :test, :development do
 end
 
 gem 'haml'
+gem 'httparty'
 
 # Use unicorn as the web server
 # gem 'unicorn'
