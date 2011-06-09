@@ -1,7 +1,8 @@
 require 'net/http'
 require 'uri'
 
-class StockPrice
+class StockPrice 
+
   attr_accessor :ticker
 
   def initialize (ticker)
