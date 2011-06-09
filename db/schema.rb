@@ -10,11 +10,12 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110527161530) do
+ActiveRecord::Schema.define(:version => 20110609144827) do
 
   create_table "stock_prices", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "ticker"
   end
 
 end
